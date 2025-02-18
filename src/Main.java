@@ -22,7 +22,7 @@ public class Main {
         System.out.println("Images Test size : " + imagesTest.size());
 
         NetworkBuilder builder = new NetworkBuilder(28,28, 256*100);
-        builder.addConvolutionLayer(10, 5, 1, 0.1, SEED);
+        builder.addConvolutionLayer(8, 5, 1, 0.1, SEED);
         builder.addMaxPoolLayer(3, 2);
         builder.addFullyConnectedLayer(10, 0.1, SEED);
 
